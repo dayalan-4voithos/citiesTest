@@ -14,8 +14,8 @@
 	<description>Interview Based Application</description>
 	<properties>
 		<java.version>17</java.version>
-		
-		
+
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -72,6 +72,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.test.app</mainClass>
+				</configuration>
+
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
